@@ -13,7 +13,7 @@ custom:
 
 provider:
   name: aws
-  runtime: python3.9
+  runtime: python3.9.0
   stage: dev
   region: ap-southeast-1
 
