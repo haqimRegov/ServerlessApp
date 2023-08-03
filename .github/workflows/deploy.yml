@@ -19,9 +19,7 @@ jobs:
           node-version: "14" # Set the desired Node.js version
 
       - name: Set up Python 3.9
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.9"
+        run: sudo apt install python3.9 python3.9-distutils
 
       - name: check for python version
         run: |
