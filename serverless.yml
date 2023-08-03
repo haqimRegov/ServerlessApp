@@ -1,5 +1,3 @@
-# serverless.yml
-
 service: serverless-flask
 
 plugins:
@@ -28,8 +26,8 @@ functions:
           method: ANY
 
   get_bmi_function:
-    handler:
+    handler: wsgi.handler
     events:
-      -http:
-        path: getBmi
-        method: ANY
+      - http:
+          path: getBmi
+          method: ANY
