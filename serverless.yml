@@ -27,9 +27,9 @@ functions:
           path: add_user
           method: ANY
 
-    get_bmi_function:
-      handler:
-      events:
-        -http:
-          path: getBmi
-          method: ANY
+  get_bmi_function:
+    handler:
+    events:
+      -http:
+        path: getBmi
+        method: ANY
