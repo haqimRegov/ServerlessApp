@@ -18,9 +18,10 @@ jobs:
         with:
           node-version: "14" # Set the desired Node.js version
 
-      - uses: actions/setup-python@v4
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
         with:
-          python-version: "3.9.0"
+          python-version: "3.9"
 
       - name: Install Serverless Framework
         run: npm install -g serverless@latest
