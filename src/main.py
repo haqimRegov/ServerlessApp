@@ -46,8 +46,14 @@ def hello_vijay():
 
 @app.route('/ainnurtest',methods=['GET'])
 def ainnurtest():
+    data={
+        "name":"Ainnur",
+        "age":"20",
+        "height":"167",
+        "adress":"pokemon",
+    }
 
-    return "Hello Ainnur"
+    return data
 
 if __name__ == '__main__':
     app.run(debug=True)
