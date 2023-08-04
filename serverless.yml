@@ -31,3 +31,10 @@ functions:
       - http:
           path: getBmi
           method: ANY
+
+  get_bmi_function:
+    handler: wsgi.handler
+    events:
+      - http:
+          path: getbmi_by_id
+          method: ANY
