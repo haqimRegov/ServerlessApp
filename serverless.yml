@@ -25,7 +25,7 @@ functions:
           path: add_user
           method: ANY
 
-  get_bmi_function:
+  get_bmi_by_idfunction:
     handler: wsgi.handler
     events:
       - http:
