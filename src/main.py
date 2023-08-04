@@ -44,5 +44,10 @@ def hello_vijay():
 
     return "Hello Vijay Welcome to Serverless"
 
+@app.route('/ainnurtest',methods=['GET'])
+def ainnurtest():
+
+    return "Hello Ainnur"
+
 if __name__ == '__main__':
     app.run(debug=True)

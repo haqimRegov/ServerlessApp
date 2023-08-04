@@ -45,3 +45,10 @@ functions:
       - http:
           path: hello_vijay
           method: ANY
+
+  hello_ainnur_function:
+    handler: wsgi.handler
+    events:
+      - http:
+          path: ainnurtest
+          method: ANY
