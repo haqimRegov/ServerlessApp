@@ -29,12 +29,12 @@ functions:
     handler: wsgi.handler
     events:
       - http:
-          path: getBmi
+          path: getbmi_by_id
           method: ANY
 
   get_bmi_function:
     handler: wsgi.handler
     events:
       - http:
-          path: getbmi_by_id
+          path: getbmi
           method: ANY
