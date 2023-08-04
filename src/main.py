@@ -16,6 +16,8 @@ def addUser():
     updatedb=inserBmiData(bmi)
     return (bmi,updatedb)
 
+CORS(app,resources={r"/*": {"origins":"*"}})
+
 @app.route('/getBmi/<nric>',methods=['GET'])
 def getbmi_by_id(nric):
     data={
@@ -36,6 +38,11 @@ def getbmi_by_id(nric):
 def getbmi():
 
     return "Kindly Provide your nric"
+
+@app.route('/getBmi',methods=['GET'])
+def hello_vijay():
+
+    return "Hello Vijay Welcome to Serverless"
 
 if __name__ == '__main__':
     app.run(debug=True)
