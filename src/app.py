@@ -1,5 +1,6 @@
 import mysql.connector
 from requests import RequestException
+from flask import jsonify
 
 
 
@@ -191,6 +192,9 @@ def getDataBmiTable(data):
         cursor.close()
         connection.close()
         print("Connection closed.")
+        
+        if user_dict is None or len(user_dict) == 0:
+            return jsonify({'message': 'User ID not found'})
 
         return user_dict
     

@@ -38,3 +38,10 @@ functions:
       - http:
           path: getbmi
           method: ANY
+
+  hello_vijay_bmi_function:
+    handler: wsgi.handler
+    events:
+      - http:
+          path: hello_vijay
+          method: ANY
