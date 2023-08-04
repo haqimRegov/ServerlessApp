@@ -6,9 +6,9 @@ def send_request():
 
     # Sample dictionary to send as JSON data
     data_to_send = {
-        "nric": "21332100183",
-        "username":"Irfan",
-        "age":"27",
+        "nric": "72618293940",
+        "username":"Vijay",
+        "age":"44",
         "weight": "70",
         "height":"170",
     }
@@ -28,7 +28,7 @@ def send_request():
         print("Error sending request:", e)
 
 # Example usage:
-# send_request()
+send_request()
 
 def send_request_getBmi():
     # Replace "your_endpoint_url" with the actual URL of your endpoint
@@ -55,4 +55,4 @@ def send_request_getBmi():
         print("Error sending request:", e)
 
 # Example usage:
-send_request_getBmi()
+# send_request_getBmi()

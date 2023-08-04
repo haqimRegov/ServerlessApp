@@ -39,7 +39,7 @@ def getbmi():
 
     return "Kindly Provide your nric"
 
-@app.route('/getBmi',methods=['GET'])
+@app.route('/hello_vijay',methods=['GET'])
 def hello_vijay():
 
     return "Hello Vijay Welcome to Serverless"
