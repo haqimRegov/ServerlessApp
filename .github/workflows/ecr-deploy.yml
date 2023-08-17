@@ -31,9 +31,10 @@ jobs:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           IMAGE_TAG: latest
         run: |
-          services=("add_user","hello_vijay","getbmi_by_id")
+          services='add_user hello_vijay getbmi_by_id'
 
-          for service in "add_user","hello_vijay","getbmi_by_id"; do 
+          select service in "$services"; 
+          do 
               docker-compose build "$service"
               docker tag "$service" "$ECR_REGISTRY/$service:$IMAGE_TAG"
               docker push "$ECR_REGISTRY/$service:$IMAGE_TAG"
