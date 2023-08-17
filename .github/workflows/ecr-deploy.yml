@@ -42,3 +42,5 @@ jobs:
               docker push "$ECR_REGISTRY/$service:$IMAGE_TAG"
               echo "$service has been pushed to $ECR_REGISTRY "
           done
+
+#test for updated image
