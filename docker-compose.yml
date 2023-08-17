@@ -3,20 +3,21 @@ services:
   add_user:
     build:
       context: ./src/add_user
-      dockerfile: Dockerfile # Make sure the Dockerfile is in the add_user directory
+      dockerfile: Dockerfile
+    image: add_user:latest
     ports:
       - "5001:5001"
 
   hello_vijay:
     build:
       context: ./src/hello_vijay
-      dockerfile: Dockerfile # Make sure the Dockerfile is in the hello_vijay directory
+      dockerfile: Dockerfile
     ports:
       - "5003:5003"
 
   getbmi_by_id:
     build:
       context: ./src
-      dockerfile: ./getbmi_by_id/Dockerfile # Make sure the Dockerfile is in the getbmi_by_id directory
+      dockerfile: ./getbmi_by_id/Dockerfile
     ports:
       - "5002:5002"
