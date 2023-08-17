@@ -12,6 +12,7 @@ services:
     build:
       context: ./src/hello_vijay
       dockerfile: Dockerfile
+    image: hello_vijay:latest
     ports:
       - "5003:5003"
 
@@ -19,5 +20,6 @@ services:
     build:
       context: ./src
       dockerfile: ./getbmi_by_id/Dockerfile
+    image: getbmi_by_id:latest
     ports:
       - "5002:5002"
