@@ -1,0 +1,22 @@
+version: "3"
+services:
+  add_user:
+    build:
+      context: ./src/add_user
+      dockerfile: Dockerfile # Make sure the Dockerfile is in the add_user directory
+    ports:
+      - "5001:5001"
+
+  hello_vijay:
+    build:
+      context: ./src/hello_vijay
+      dockerfile: Dockerfile # Make sure the Dockerfile is in the hello_vijay directory
+    ports:
+      - "5003:5003"
+
+  getbmi_by_id:
+    build:
+      context: ./src
+      dockerfile: ./getbmi_by_id/Dockerfile # Make sure the Dockerfile is in the getbmi_by_id directory
+    ports:
+      - "5002:5002"

@@ -2,12 +2,13 @@ import requests
 
 def send_request():
     # Replace "your_endpoint_url" with the actual URL of your endpoint
-    endpoint_url = "http://127.0.0.1:5000/add_user"
+    # endpoint_url = "http://127.0.0.1:5000/add_user"
+    endpoint_url = "http://localhost:5001/add_user"
 
     # Sample dictionary to send as JSON data
     data_to_send = {
-        "nric": "72618293940",
-        "username":"Vijay",
+        "nric": "1231232131",
+        "username":"test3",
         "age":"44",
         "weight": "70",
         "height":"170",

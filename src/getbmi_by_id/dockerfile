@@ -1,0 +1,9 @@
+FROM python:3.9
+
+WORKDIR /application
+COPY ./getbmi_by_id/. .
+COPY ./add_user/functions.py .
+RUN pip install -r requirements.txt
+EXPOSE 5002
+
+CMD ["python", "app.py"]
