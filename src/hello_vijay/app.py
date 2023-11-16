@@ -18,6 +18,8 @@ def hello_vijay():
 @app.route('/')
 def index():
     user_ip = request.remote_addr  # Get the user's IP address
+    logger = logging.getLogger(__name__)
+    logger.warning('testing log message')
     logging.info(f'User with IP address {user_ip} visited the website.')
     
     # Your other web application code here
