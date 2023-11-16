@@ -21,7 +21,7 @@ def index():
     logging.info(f'User with IP address {user_ip} visited the website.')
     
     # Your other web application code here
-    return "Hello, World"!
+    return "Hello, World !"
 
 
 if __name__ == "__main__":
