@@ -22,4 +22,4 @@ services:
       dockerfile: ./getbmi_by_id/Dockerfile
     image: getbmi_by_id:latest
     ports:
-      - "5002:5002
+      - "5002:5002"
