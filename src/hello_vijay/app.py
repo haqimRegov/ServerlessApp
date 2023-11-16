@@ -10,6 +10,7 @@ CORS(app,resources={r"/*": {"origins":"*"}})
 
 @app.route('/hello_vijay',methods=['GET'])
 def hello_vijay():
+    print("Endpoint accessible")
 
     return "Hello Vijay Welcome to Serverless"
 
